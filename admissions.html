@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+<title>Alumni Connect</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-black.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
+<body id="myPage">
+<ul class="w3-navbar w3-theme-d2 w3-left-align w3-large">
+  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+    <a class="w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="#" class="w3-hover-black"><img src="IIC_Logo_New2.jpg" alt="Lights" style="width:60%;height:60%;"></a></li>
+  <h2 style="color:cyan">Institute of Informatics and Communication </h2>
+  <h3 style="color:cyan">University of Delhi, South Campus </h3>
+  
+  
+  <li class="w3-hide-small w3-right"><a href="#" class="w3-hover-teal" title="Search"><i class="fa fa-search"></i></a></li>
+ </ul>
+</div>
+<div>
+<ul class="w3-navbar w3-dark-grey w3-left-align w3-large">
+  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+    <a class="w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li class="w3-hide-small"><a href="home.html">Home</a></li>
+  <li class="w3-dropdown-hover w3-hover-teal">
+    <a href="#">Admissions <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-hover-grey w3-card-4">
+     <a href="eligibility.html">eligibility</a>
+      <a href="#">Entrance Syllabus</a>
+    </div>
+  </li>
+  
+  <li class="w3-dropdown-hover w3-hover-teal">
+    <a href="#">Acedemics <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-hover-grey w3-card-4">
+      <a href="syllabus.html">Course Structure</a>
+      <a href="#">Results</a>
+    </div>
+  </li>
+  <li class="w3-hide-small"><a href="amenities.html">amenities</a></li>
+ 
+  <li class="w3-hide-small"><a href="#" class="w3-hover-teal">VLE</a></li>
+  <li class="w3-hide-small"><a href="#" class="w3-hover-teal">Projects</a></li>
+  <li class="w3-hide-small"><a href="#" class="w3-hover-teal">Ubuntu Training</a></li>
+  <li class="w3-hide-small"><a href="#" class="w3-hover-teal">Placements</a></li>
+  <li class="w3-dropdown-hover w3-hover-teal">
+    <a href="#">Research <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-hover-grey w3-card-4">
+      <a href="#">Ph.D Programme</a>
+      <a href="#">Entrance Syllabus</a>
+    </div>
+  </li>
+  <li class="w3-hide-small"><a href="#" class="w3-hover-teal">Alumni</a></li>
+</div>
+
+
+
+        <article class='content' id='main' role='main'>
+                <strong>THE INSTITUTE</strong>
+<p>Information Technology integrates a wide spectrum of knowledge and skill ranging from the design of computer hardware, software systems, and telecommunication to the impact of information technology on society. To achieve this holistic goal the Institute of Informatics &amp; Communication (IIC) was established in 1997 with the following objectives:</p>
+<p>To serve as an inter-disciplinary centre for humanities, social sciences, pure and applied sciences and as a nodal point between university and various Institutions/Industries, related to communication and informatics.</p>
+<p>To conduct professional/socially relevant post-graduate teaching programmes, independently or in collaboration with various departments on different aspects on communication and informatics.</p>
+<p>To conduct research on various aspects of informatics and communication.</p>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle_container").hide();
+        $(".active").slideToggle("slow,");
+        $(".active").prev("h2.trigger").addClass("active"); 
+
+        /*$("h2.trigger").toggle(function(){
+            $(this).addClass("active"); 
+            }, function () {
+            $(this).removeClass("active");
+        });*/
+
+        $("h2.trigger").click(function(){		
+            $(this).next(".toggle_container").slideToggle("slow,");
+
+            if ($(this).hasClass("active")){
+                $(this).removeClass("active");
+            }else{
+                //toggle all other open containers first
+                $(".active").next(".toggle_container").slideToggle("slow,");
+                $(".active").removeClass("active");
+                $(this).addClass("active"); 
+            }
+        });
+    });
+</script>
+<h2 class="trigger"><strong>Teaching Approach</strong></h2>
+	<div class="toggle_container ">
+		<div class="block">
+			
+<p>IIC has a panel of visiting professors and guest teaching faculty, comprising of highly qualified, experienced and distinguished professional from industry and academics. IIC is equipped with air-conditioned software laboratory with latest computers, licensed software, digital electronics and communication laboratories.</p>
+<p>The learning approach at IIC includes classroom lectures, tutorials, project assignment and internet access. The students are encouraged to develop their skills and acquire theoretical knowledge and practical training in electronics, telecommunication and computer hardware and software. To improve the communication skills of students and to increase their confidence, students are required to make presentations with the help of visual aids during the fortnightly seminar sessions.</p>
+<p>The selection process to enter the postgraduate programme is rigorous and the number of seats is restricted for ensuring quality education. The institute provides an excellent environment for learning and innovation.</p>
+		</div>
+	</div>
+	
+ <h2 class="trigger"><strong>Academic Programme</strong></h2>
+	<div class="toggle_container ">
+		<div class="block">
+			
+<p><strong>Master of Science (Informatics) - Two-year degree programme</strong></p>
+<p>The two-year post-graduate degree programme provides students theoretical knowledge and practical skills relating to computers, programming languages, graphics and multimedia applications, telecommunication systems, networking, and management of information systems. The students, after completing the two-year programme, are expected to attain a good background in conventional computer programming, and expertise in computers and telecommunication networks. To supplement the academic inputs, it is mandatory for all the students to undergo practical training (summer training / project) in house or in a business/ industrial/ research organisation, at the end of II or IV semester of the programme. Students who successfully complete a total of 138 credits, from all the four semesters and summer training, are awarded the degree of M.Sc. in Informatics.</p>
+<p>Since the students come from different disciplines, to bring them at par before starting the regular courses, a zero semester of about one-month has been introduced. During the Zero semester, students take courses in topics in which they do not have an adequate background and are exposed to laboratory and Internet. Out of various papers specified for the zero semester a minimum of two papers have to be taken by every student and depending on the background, a student may be advised to take more than two papers. Zero semester papers do not carry any credit for the purpose of classification of results. This period is also used for training students needing financial assistance to work as teaching or administrative assistants.</p>
+		</div>
+	</div>
+	
+ <h2 class="trigger"><strong>Eligibility Conditions for Admission</strong></h2>
+	<div class="toggle_container ">
+		<div class="block">
+			
+<p>The candidate must have passed from the University of Delhi with any of the following degrees or have equivalent qualification from a recognized University / Institutions with at least 50% marks in aggregate</p>
+<p>Bachelor's degree under 10+2+3 scheme (B.Sc./B.Sc.(H)/B.Appl.Sc.) in Physical Sciences or Chemical Sciences or Electronic Sciences or Mathematical Sciences or Computer Sciences or any combinations of subjects with at least two from these disciplines.</p>
+<p>B.E./B.Tech. degree in any discipline</p>
+<p>Students who are appearing or have appeared in the final examination of the above courses may also apply. However, the results of the qualifying examination must be submitted on orbefore 31st August 2013 failing which the admission will be cancelled.</p>
+<p>		</div>
+	</div>
+	
+ <h2 class="trigger"><strong>Number of Seats</strong></h2>
+	<div class="toggle_container ">
+		<div class="block">
+			</p>
+<p>The total numbers of seats (including reserved seats) for M.Sc. are 62.</p>
+<p>Reservations /Relaxation</p>
+<p>15% of the seats are reserved for Scheduled Caste candidates.</p>
+<p>7.5% of the seats are reserved for Scheduled Tribe candidates.</p>
+<p>5% of the seats are reserved for Children/Widows of the officers and men of Armed Forces including Para-military personnel killed/disabled in action.</p>
+<p>3% of the seats are reserved for physically handicapped candidates.</p>
+<p>Relaxation to the extent of 5% marks in the minimum marks for eligibility to the entrance test and qualifying for group discussion and interview will be allowed to the above categories.</p>
+<p>For OBC (Non Creamy Layer) candidates, seats are reserved as per University Norms.</p>
+		</div>
+	</div>
+	
+ <h2 class="trigger"><strong>Selection Procedure</strong></h2>
+	<div class="toggle_container ">
+		<div class="block">
+			
+<p>There will be a written admission test for all the eligible candidates (including the students whose results are awaited)</p>
+<p>The question paper for the entrance examination will be of multiple-choice type. The question paper will have two parts and will be for a total of 3 hours duration.</p>
+<p><strong>Part I: General English Comprehension, Analytical Ability and Reasoning.</strong></p>
+<p><strong>Part II: Mathematics, Physics and Electronics &amp; Basic knowledge of Computers.</strong></p>
+<p>Though there is no fixed syllabus for the entrance test, a broad outline of the syllabus is suggested in Appendix.</p>
+<p>A suitable number of candidates in order of merit from among the general and reserved categories who qualify the written test will be called for group discussion and interview to be held at the University of Delhi South Campus, New Delhi. No TA/DA will be paid to the candidates for appearing in the entrance test or for the group discussion/interview. The candidates will be required to produce original certificates and mark sheets at the time of interview. The candidates whose results are awaited may be provisionally allowed to appear in the interview upon giving an undertaking.</p>
+<p>The candidates who do not appear in the group discussion/interview will not be considered for admission.</p>
+<p>The final selection for admission will be based on the following criteria:</p>
+<p>Written test : 75% weightage</p>
+<p>Group Discussion and Interview : 25% weightage.</p>
+<p>There will be separate lists of selected candidates for general and reserved categories.</p>
+<p>If the list of selected candidate includes the names of those who were provisionally allowed to appear in the group discussion and interview, they will be entitled to provisional admission, on the condition that they submit their final results before the date specified by the University.</p>
+		</div>
+	</div>
+	
+ <h2 class="trigger"><strong>Fee Structure</strong></h2>
+	<div class="toggle_container ">
+		<div class="block">
+			
+<p>The fee for various programme is payable at the beginning of each semester. The approximate fee per semester for the M.Sc (Informatics) Programme is Rs. 7500/- (Students with physical disabilities are exempted from payment of fees as per university norms).</p>
+		</div>
+	</div>
+	
+ <h2 class="trigger"><strong>Faculty</strong></h2>
+	<div class="toggle_container ">
+		<div class="block">
+			
+<p><strong>From Campus</strong></p>
+<p>Professor Avinashi Kapoor, M.Sc., Ph.D., Professor, Department of Electronic Science, UDSC, specialisation in Digital Signal Processing.</p>
+<p>Professor Mridula Gupta, M.Sc., M.Tech. (Microwave), Ph.D., Professor, Department of Electronic Science, UDSC, specialisation in Communication Systems.</p>
+<p>Dr. M.K. Das, M.Sc., Ph.D., Associate Professor at IIC, UDSC, specialisation in Modeling &amp; Simulation.</p>
+<p>Dr. Sanjeev Singh, M.Sc., Ph.D., Assistant Professor at IIC, UDSC specialisation in Network Architecture, Applications and Learning Technologies.</p>
+<p>Dr. Sandhya Aneja, M.Sc., M.Tech, Ph.D., Assistant Professor at IIC, UDSC (on leave).</p>
+<p><strong>Visiting Faculty</strong></p>
+<p>Dr. Rakesh Yadav, MCA, Ph.D, Associate Professor, Shivaji College, specialisation in programming languages.</p>
+<p>Dr. Subhashish Haldar, M.Sc., Ph.D., Associate Professor, Motilal Nehru College, specialisation in Microelectronics.</p>
+<p>Mr. Rajat Budhiraja, Aricent Technologies, Gurgaon, specialization in</p>
+<p>Tele-Communication.</p>
+<p>Mr. Tanmoy Bandopadhyay, Aricent Technologies, Gurgaon, specialization in</p>
+<p>Tele-Communication, Operating System.</p>
+<p>Mr. Rashim Pathak, Comviva Technologies, Gurgaon, specialization in</p>
+<p>Tele-Communication.</p>
+<p>Mr. Manoj Aggarwal, IBM, Gurgaon, specialization in</p>
+<p>Software Engineering</p>
+<p>Mr. Sourav Das, Vayamtech, New Delhi, specialization in</p>
+<p>Software Engineering</p>
+		</div>
+	</div>
+	
+ <h2 class="trigger"><strong>Placement</strong></h2>
+	<div class="toggle_container ">
+		<div class="block">
+			
+<p>IIC graduates have been well placed in Government, Public, Private and Multinational organization through campus interviews such as Aricent Technologies, IBM Global System, HCL, Wipro Technologies, Infosys Technologies, Alca-Tel, Sapient, Conexant, Comviva Technologies, Hughes Systique and many more.</p>
+<p>		</div>
+	</div>
+	
+ <h2 class="trigger"><strong>Facilities</strong></h2>
+	<div class="toggle_container ">
+		<div class="block">
+			</p>
+<p><strong>Laboratory</strong></p>
+<p>Class room teaching and computer laboratory are supplemented with exposure to information and training material available on CD-ROMs and through Internet. The emphasis is on using the main application laboratory as the major focus of teaching and training programme. This enables students to acquire capabilities of self-learning, critical and analytical thinking not only to cope with existing software packages and languages but encourages them to design new packages. The main application laboratory already consists of Apple X-Server, Acer &amp; Apple I-Mac and SUN Enterprise 450 edition Servers. Students are allowed to work on heterogeneous operating environments. Separate new Linux lab &amp; Apple Mac Lab is also in place.</p>
+<p>The facility of latest multimedia systems, digital cameras, Multimedia projector, CD- server are in the main application laboratory for Interactive Computer Based Teaching (CBT). A separate Linux workstation lab is also in place. The Networking laboratory with real time experimental facilities is one of the major feature. The Hardware (digital, microprocessor and communication) laboratory is also in place for in-depth exposure to students.</p>
+<strong>Library</strong>
+<p>The library at South Campus is well stocked with text books, reference works, and literature on various aspects of Information Technology, Computers, Communication, Networks, IT Management, etc. IIC is also equipped with it's own internal library for ready reference.</p>
+<p><strong>Hostels</strong></p>
+<p>Limited hostel accommodation will be available to the students of IIC at the following postgraduate hostels of the University of Delhi. The students should contact each hostel separately for seeking admission.</p>
+<p><strong>For Men Only</strong></p>
+<p>Gwyer Hall, University of Delhi, Delhi - 110 007.</p>
+<p>Jubilee Hall, University of Delhi, Delhi - 110 007.</p>
+<p>International Student's House, University of Delhi, Delhi - 110 007.</p>
+<p>Mansarowar Hostel, University of Delhi, Delhi - 110 007.</p>
+<p>P.G. Men's Hostel, University of Delhi, Delhi - 110 007.</p>
+<p>D.S. Kothari Hostel, University of Delhi, Delhi – 110 007</p>
+<p>Saramati PG Man's Hostel, University of Delhi South Campus – 110 021.</p>
+<p>Aravali PG Man's Hostel, University of Delhi South Campus-110021.</p>
+<p><strong>For Women Only</strong></p>
+<p>University Hostel for Women, University of Delhi, Delhi - 110 007.</p>
+<p>Meghdoot Hostel, University of Delhi, Delhi - 110 007.</p>
+<p>Geetanjali Hostel, University of Delhi, South Campus, Benito Juarez Road, New Delhi - 110 021.</p>
+		</div>
+	</div>
+	
+ <h2 class="trigger"><strong>Syllabus for the Entrance Examination</strong></h2>
+	<div class="toggle_container ">
+		<div class="block">
+			
+<p>The entrance examination will consist of a multiple-choice question paper of 3 hours duration having two parts.</p>
+<p>Part I: General English Comprehension; Analytical Ability and Reasoning.</p>
+<p>Part II: Mathematics, Physics, Electronics and Basic knowledge of Computers.</p>
+<p>Though there is no fixed syllabus for the entrance test, a broad outline of the syllabus is suggested below.</p>
+<p><strong>PART- I</strong></p>
+<p>Marks : 30 (Vocabulary and Comprehension: 10. Analytical Ability and Reasoning: 20.)</p>
+<p>This part is intended to test the candidate's vocabulary and analytical skills at a level essential for accurate comprehension and presentation of material appropriate for this degree. The language background expected will be of the level of English at Senior Secondary Examination. The paper will include passages for comprehension, test of vocabulary (synonyms and antonyms), elementary grammar and syntax.</p>
+<p>The section on Analytical Ability and Reasoning will include standard questions on pattern recognition, logic, Venn diagrams etc. It is not intended to be subject-specific.</p>
+<p><strong>PART- II</strong></p>
+<p>Marks : 120 (Mathematics -40; Physics -40; Electronics and Basic knowledge of Computer 40)</p>
+<p>This part is intended to test knowledge of the subject.</p>
+<p><strong>MATHEMATICS</strong></p>
+<p>Scalar and vector fields, tangent and normal vectors, gradient, divergence, curl, vector identities, Gauss, Stokes' and Green's theorem. Convergent and divergent sequences and series, tests for convergence and divergence, absolute and conditional convergence. Limits, continuity and differentiability of functions. Solutions of first and second order linear homogeneous differential equations. Partial differential equations, separation of variable method. Vibrations of rectangular membranes. Systematic and random errors, Normal law of error. Least square fitting of data (linear case). Fourier series, Fourier transform, Sine and cosine transform, convolution theorem. Laplace transform: transforms of elementary functions and solution of simple differential equations. Matrix algebra. Singular and non-singular matrices. Inverse of a matrix. Eigenvalues and eigenvectors, Hermitian and skew-hermitian, symmetric and antisymmetric, orthogonal and unitary matrices. Similarity transformation, Cayley-Hamilton theorem. Definitions of random sample, parameter, and statistics. Concept of sampling distribution and standard error. Sampling distribution of mean and variance of a random sample from a normal population. Tests of significance. Complex variables: residues, poles, Cauchy's theorem.</p>
+<p><strong>PHYSICS</strong></p>
+<p>Motion of a charged particle in electric and magnetic fields. Conservation of momentum. Conservative and nonconservative forces. Motion involving both translation and rotation. Motion of a particle under a central force field. Inertial and noninertial frames, fictitious forces. Postulates of special relativity, Lorentz transformation, relativistic transformation of velocity, frequency, energy and momentum. Maxwell's law of distribution of velocities, mean free path. Transport phenomena: viscosity, conduction and diffusion. Brownian motion. Magnetic force between current elements, Ampere's law. Torque on a current loop in a uniform magnetic field. Faraday's law of induction, self and mutual induction, energy stored in electric and magnetic field, B-H curve, and energy loss in hysteresis. Maxwell's equations, wave equation, plane waves in dielectric media. Polarization of e.m. waves; linear, circular and elliptical polarization. Light propagation in uniaxial crystals, double refraction. Modes in rectangular waveguides, energy flow and attenuation in waveguides.</p>
+<p>Interference, division of amplitude and wavefront. Concept of laser. Photoelectric effect, Compton effect, wave particle duality, wave packet. Two-slit experiment with electrons. Wave amplitude and wave functions, uncertainty principle, Schrodinger's equation, probabilistic interpretation. Stationary states, one- dimensional simple harmonic oscillator, infinite and finite potential well. Orbital angular momentum and azimuthal quantum numbers, and space quantization. X-ray diffraction and Bragg's Law.</p>
+<p><strong>ELECTRONICS AND BASIC KNOWLEDGE OF COMPUTERS</strong></p>
+<p>Network analysis: Kirchoff's current &amp; voltage law, Norton &amp; Thevenin's theorems (Poles &amp; Zeroes, Mesh and node analysis). Basic features of semiconductor material, diode, transistor, FET, MOSFET and SCR and their applications (rectifier, waveshaping, amplifier &amp; oscillators). Concept of feedback. OP-AMPS &amp; their simple applications, integration, differentiation. Boolean algebra, n-array arithmetics (binary, octal, hexadecimal, 1's complement 2's complement). Logic families (RTL, DTL, DCTL, TTL), K-map. Combinational circuits (Adder, Subtractor, MUX, DEMUX), look-ahead carry concept, sequential circuits, flip-flops, registers, counters and memories, A/D &amp;D/A converters. Basic idea of modulation &amp; demodulation; AM, FM, PPM, PWM and PAM. Elementary ideas of satellite communication. Multimeters (analog &amp; digital), Q-meter, frequency meter. Basic architecture of 8 bit microprocessors,assembly language and simple programs based on assembly language, interrupts and timimg diagrams. Computer basics, data representation, input/output units, compiler, memory, micro-processor, computer architecture. Fundamentals of high level languages. Disk Operating System (DOS). Computer generations and classifications.</p>
+<p>		</div>
+	</div>
+	
+</p>
+<p><h2 class="trigger"><strong>Programme Structure</strong></h2>
+	<div class="toggle_container ">
+		<div class="block">
+			</p>
+<p><strong>Zero Semester :  Total Credits 0</strong></p>
+<table class="t1" style="width: 498px;" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td class="td1" valign="middle">
+<p class="p3"> Code No.</p>
+</td>
+<td class="td2" valign="middle">
+<p class="p3">Paper</p>
+</td>
+<td class="td3" valign="middle">
+<p class="p3">Credits</p>
+</td>
+</tr>
+<tr>
+<td class="td1" valign="middle">
+<p class="p1">  IT 01</p>
+</td>
+<td class="td2" valign="middle">
+<p class="p1">Computational Numerical and Statistical Methods</p>
+</td>
+<td class="td3" valign="middle">
+<p class="p1">0</p>
+</td>
+</tr>
+<tr>
+<td class="td1" valign="middle">
+<p class="p1">  IT02 </p>
+</td>
+<td class="td2" valign="middle">
+<p class="p1">Foundation of Linear System Theory</p>
+</td>
+<td class="td3" valign="middle">
+<p class="p1">0</p>
+</td>
+</tr>
+<tr>
+<td class="td1" valign="middle">
+<p class="p1">  IT 03</p>
+</td>
+<td class="td2" valign="middle">
+<p class="p1">Introduction to Programming</p>
+</td>
+<td class="td3" valign="middle">
+<p class="p1">0</p>
+</td>
+</tr>
+<tr>
+<td class="td1" valign="middle">
+<p class="p1">  IT 04</p>
+</td>
+<td class="td2" valign="middle">
+<p class="p1">Analog Electronics</p>
+</td>
+<td class="td3" valign="middle">
+<p class="p1">0</p>
+</td>
+</tr>
+<tr>
+<td class="td1" valign="middle">
+<p class="p1">  IT 05</p>
+</td>
+<td class="td2" valign="middle">
+<p class="p1">Digital Electronics and Computer Organisation</p>
+</td>
+<td class="td3" valign="middle">
+<p class="p1">0</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="p1"> </p>
+<p><strong>First Semester :  Total Credits 32</strong></p>
+<table class="t2" style="width: 496px;" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td class="td4" valign="middle">
+<p class="p3">   Code No.</p>
+</td>
+<td class="td5" valign="middle">
+<p class="p3">Paper</p>
+</td>
+<td class="td6" valign="middle">
+<p class="p3">Credits</p>
+</td>
+</tr>
+<tr>
+<td class="td4" valign="middle">
+<p class="p1">    IT 11</p>
+</td>
+<td class="td5" valign="middle">
+<p class="p1">Programming Methodology</p>
+</td>
+<td class="td6" valign="middle">
+<p class="p1">7</p>
+</td>
+</tr>
+<tr>
+<td class="td4" valign="middle">
+<p class="p1">    IT12</p>
+</td>
+<td class="td5" valign="middle">
+<p class="p1">Computer Architecture</p>
+</td>
+<td class="td6" valign="middle">
+<p class="p1">4</p>
+</td>
+</tr>
+<tr>
+<td class="td4" valign="middle">
+<p class="p1">    IT 13</p>
+</td>
+<td class="td5" valign="middle">
+<p class="p1">Introduction to Communication and Systems</p>
+</td>
+<td class="td6" valign="middle">
+<p class="p1">7</p>
+</td>
+</tr>
+<tr>
+<td class="td4" valign="middle">
+<p class="p1">    IT 14</p>
+</td>
+<td class="td5" valign="middle">
+<p class="p1">Mathematical Foundation for Computer Science</p>
+</td>
+<td class="td6" valign="middle">
+<p class="p1">7</p>
+</td>
+</tr>
+<tr>
+<td class="td4" valign="middle">
+<p class="p1">    IT 15</p>
+</td>
+<td class="td5" valign="middle">
+<p class="p1">Microprocessor and Interface Programming</p>
+</td>
+<td class="td6" valign="middle">
+<p class="p1">7</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><strong>Second Semester : Total Credits 32</strong></p>
+<table class="t1" style="width: 497px;" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td class="td7" valign="middle">
+<p class="p3">    Code No.</p>
+</td>
+<td class="td8" valign="middle">
+<p class="p3">Paper</p>
+</td>
+<td class="td9" valign="middle">
+<p class="p3">Credits</p>
+</td>
+</tr>
+<tr>
+<td class="td7" valign="middle">
+<p class="p1">    IT 21</p>
+</td>
+<td class="td8" valign="middle">
+<p class="p1">Voice and Data Communication</p>
+</td>
+<td class="td9" valign="middle">
+<p class="p1">4</p>
+</td>
+</tr>
+<tr>
+<td class="td7" valign="middle">
+<p class="p1">    IT 22</p>
+</td>
+<td class="td8" valign="middle">
+<p class="p1">Data Structure and Design of Algorithms</p>
+</td>
+<td class="td9" valign="middle">
+<p class="p1">7</p>
+</td>
+</tr>
+<tr>
+<td class="td7" valign="middle">
+<p class="p1">    IT 23</p>
+</td>
+<td class="td8" valign="middle">
+<p class="p1">Operating Systems</p>
+</td>
+<td class="td9" valign="middle">
+<p class="p1">7</p>
+</td>
+</tr>
+<tr>
+<td class="td7" valign="middle">
+<p class="p1">    IT 24</p>
+</td>
+<td class="td8" valign="middle">
+<p class="p1">Programming Languages</p>
+</td>
+<td class="td9" valign="middle">
+<p class="p1">7</p>
+</td>
+</tr>
+<tr>
+<td class="td7" valign="middle">
+<p class="p1">     IT 25</p>
+</td>
+<td class="td8" valign="middle">
+<p class="p1">Computer Graphics and Multimedia</p>
+</td>
+<td class="td9" valign="middle">
+<p class="p1">7</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><strong>Third Semester : Total Credits 32</strong></p>
+<table class="t3" style="width: 495px;" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td class="td10" valign="middle">
+<p class="p3">    Code No.</p>
+</td>
+<td class="td11" valign="middle">
+<p class="p3">Paper</p>
+</td>
+<td class="td12" valign="middle">
+<p class="p3">Credits</p>
+</td>
+</tr>
+<tr>
+<td class="td10" valign="middle">
+<p class="p1">     IT 31</p>
+</td>
+<td class="td11" valign="middle">
+<p class="p1">Network Architecture</p>
+</td>
+<td class="td12" valign="middle">
+<p class="p1">7</p>
+</td>
+</tr>
+<tr>
+<td class="td10" valign="middle">
+<p class="p1">     IT 32</p>
+</td>
+<td class="td11" valign="middle">
+<p class="p1">Data Base Management Systems</p>
+</td>
+<td class="td12" valign="middle">
+<p class="p1">7</p>
+</td>
+</tr>
+<tr>
+<td class="td10" valign="middle">
+<p class="p1">     IT 33</p>
+</td>
+<td class="td11" valign="middle">
+<p class="p1">Telecommunication Networks and Technology</p>
+</td>
+<td class="td12" valign="middle">
+<p class="p1">4</p>
+</td>
+</tr>
+<tr>
+<td class="td10" valign="middle">
+<p class="p1">     IT 34</p>
+</td>
+<td class="td11" valign="middle">
+<p class="p1">Object Oriented Technology</p>
+</td>
+<td class="td12" valign="middle">
+<p class="p1">7</p>
+</td>
+</tr>
+<tr>
+<td class="td10" valign="middle">
+<p class="p1">     IT 35</p>
+</td>
+<td class="td11" valign="middle">
+<p class="p1">Software Engineering</p>
+</td>
+<td class="td12" valign="middle">
+<p class="p1">7</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><strong>Fourth Semester : Total Credits 32</strong></p>
+<table class="t4" style="width: 494px;" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td class="td13" valign="middle">
+<p class="p3">   Code No.</p>
+</td>
+<td class="td14" valign="middle">
+<p class="p3">Paper</p>
+</td>
+<td class="td15" valign="middle">
+<p class="p3">Credits</p>
+</td>
+</tr>
+<tr>
+<td class="td13" valign="middle">
+<p class="p1">    IT 41</p>
+</td>
+<td class="td14" valign="middle">
+<p class="p1">Network Application Development</p>
+</td>
+<td class="td15" valign="middle">
+<p class="p1">7</p>
+</td>
+</tr>
+<tr>
+<td class="td13" valign="middle">
+<p class="p1">    IT 42</p>
+</td>
+<td class="td14" valign="middle">
+<p class="p1">Telecommunication Network Management</p>
+</td>
+<td class="td15" valign="middle">
+<p class="p1">7</p>
+</td>
+</tr>
+<tr>
+<td class="td13" valign="middle">
+<p class="p1">    IT 43</p>
+</td>
+<td class="td14" valign="middle">
+<p class="p1">Modeling, Simulation and Performance Evaluation</p>
+</td>
+<td class="td15" valign="middle">
+<p class="p1">7</p>
+</td>
+</tr>
+<tr>
+<td class="td13" valign="middle">
+<p class="p1">    IT 44</p>
+</td>
+<td class="td14" valign="middle">
+<p class="p1">IT Management</p>
+</td>
+<td class="td15" valign="middle">
+<p class="p1">4</p>
+</td>
+</tr>
+<tr>
+<td class="td13" valign="middle">
+<p class="p1">    IT 45</p>
+</td>
+<td class="td14" valign="middle">
+<p class="p1">Software Engineering</p>
+</td>
+<td class="td15" valign="middle">
+<p class="p1">7</p>
+</td>
+</tr>
+</tbody>
+</table>
+<br />
+<p><strong>Note:</strong> The seven credit paper have three hours theory, one hour tutorial and three hours practicals in a week. The four credit papers do not have practicals. A candidate has to clear theory and practical separately. A minimum of 138 credits are required for M.Sc.(Informatics).</p>
+		</div>
+	</div>
+	
+ 
+            </article>
+            <!-- .content //-->
+        </div>
+        <!-- .content-inner //-->
+
+<div class='content-inner sidebar grid_4 pull_8'>
+ <!-- .news-summary wrapper --><article class='news-summary'><span class='heading'><span>News</span></span><ul class='category-list cf'><li class='first'><a href='indexb6db.html?mact=News,cntnt01,default,0&amp;cntnt01summarytemplate=Summary_Simplex&amp;cntnt01number=2&amp;cntnt01detailpage=83&amp;cntnt01detailtemplate=Simplex_Detail&amp;cntnt01category_id=9&amp;cntnt01returnid=83'>News</a></li></ul><!-- .news-article (wrapping each article) --><section class='news-article'><header><h2><a href='indexad0f.html?mact=News,cntnt01,detail,0&amp;cntnt01articleid=93&amp;cntnt01origid=86&amp;cntnt01detailtemplate=Simplex_Detail&amp;cntnt01returnid=83' title='Ph.D. ENTRANCE TEST SYLLABUS'>Ph.D. ENTRANCE TEST SYLLABUS</a></h2><div class='meta cf'><time class='date' datetime='2016-05-04'><span class='day'> 04 </span><span class='month'> May </span></time><span class='author'> Posted by: iic </span><span class='category'> Category: News</span></div></header><p> Ph.D. ENTRANCE TEST SYLLABUS </p><span class='more'><a href="indexad0f.html?mact=News,cntnt01,detail,0&amp;cntnt01articleid=93&amp;cntnt01origid=86&amp;cntnt01detailtemplate=Simplex_Detail&amp;cntnt01returnid=83">More</a> →</span></section><!-- .news-article //--><!-- .news-article (wrapping each article) --><section class='news-article'><header><h2><a href='index29e0.html?mact=News,cntnt01,detail,0&amp;cntnt01articleid=92&amp;cntnt01origid=86&amp;cntnt01detailtemplate=Simplex_Detail&amp;cntnt01returnid=83' title='Applications are invited for Internship'>Applications are invited for Internship</a></h2><div class='meta cf'><time class='date' datetime='2016-03-26'><span class='day'> 26 </span><span class='month'> Mar </span></time><span class='author'> Posted by: iic </span><span class='category'> Category: News</span></div></header><p>Applications are invited from deserving candidates for `Internships’ at Institute of Informatics &amp; Communication, University of Delhi South Campus . The candidates from other recognized organisations/ institutions may also apply.</p><span class='more'><a href="index29e0.html?mact=News,cntnt01,detail,0&amp;cntnt01articleid=92&amp;cntnt01origid=86&amp;cntnt01detailtemplate=Simplex_Detail&amp;cntnt01returnid=83">More</a> →</span></section><!-- .news-article //--><!-- news pagination --><span class='paginate'>Page 1 of 14<a href="index5b92.html?mact=News,m2d9ef,default,1&amp;m2d9efsummarytemplate=Summary_Simplex&amp;m2d9efnumber=2&amp;m2d9efdetailpage=83&amp;m2d9efdetailtemplate=Simplex_Detail&amp;m2d9efcategory=News&amp;m2d9efpagenumber=2&amp;m2d9efreturnid=86&amp;page=86">&gt;</a> <a href="indexfabf.html?mact=News,m2d9ef,default,1&amp;m2d9efsummarytemplate=Summary_Simplex&amp;m2d9efnumber=2&amp;m2d9efdetailpage=83&amp;m2d9efdetailtemplate=Simplex_Detail&amp;m2d9efcategory=News&amp;m2d9efpagenumber=14&amp;m2d9efreturnid=86&amp;page=86">&gt;&gt;</a></span></article><!-- .news-summary //--> 
+</div>
+
+
+        <!-- .sidebar //-->
+        <div class='cf grid_8 prefix_4'>
+            <span class='previous'>Previous page: <a href="index36b1.html?page=results" title="Results" >Results</a></span>
+            <span class='next'>Next page: <a href="indexecc3.html?page=academic-programme" title="Academic Programme" >Academic Programme</a></span>
+        </div>
+    </div>
+    <!-- .content-wrapper //-->
+    <!-- .footer (footer area) -->
+    <footer class='row footer'>
+        <span class='back-top'><a href="indexdcba.html?page=information-bulletin#main">&uarr;</a></span>
+        <div class='grid_1'><ul class="social cf">
+<li class="twitter"><a title="Twitter" href="https://twitter.com/iicudscofficial" target="_blank">Twitter</a></li>
+<li class="facebook"><a title="Facebook" href="https://www.facebook.com/iicudscofficial" target="_blank">Facebook</a></li>
+<!--<li class="linkedin"><a title="LinkedIn" href="http://www.linkedin.com/groups?gid=1139537">LinkedIn</a></li>-->
+<li class="youtube"><a title="YouTube" href="http://www.youtube.com/user/IICUDSCOFFICIAL" target="_blank">YouTube</a></li>
+</ul>
+</div>
+<section class='grid_4 copyright'>
+           <a href="index5084.html?page=contact-us"><button>Contact Us</button></a>
+            <p>© Copyright 2013-2016 - Institute of Informatics &amp; Communication<br /> This site is powered by <a href="http://www.cmsmadesimple.org/">CMS Made Simple</a> version 1.11.9</p>
+        </section>
+        <section class='grid_6 noprint'>
+            <nav class='footer-navigation row'>
+                <ul class='cf'><li><a href='index171c.html?page=about'>About</a></li><li><a href='index5e17.html?page=facilities'>Facilities</a></li><li class='parent current'><a href='indexdcba.html?page=information-bulletin' class='current'>Admissions</a><ul><li><a href='index36b1.html?page=results'>Results</a></li><li><a href='indexecc3.html?page=academic-programme'>Academic Programme</a></li><li><a href='index27ec.html?page=eligibility-conditions-for-admission'>Eligibility for Admission</a></li><li><a href='index7b46.html?page=phd-programme'>PHD Programme</a></li></ul></li><li class='parent'><a href='index11a7.html?page=academics'>Academics</a><ul><li><a href='index086d.html?page=course-structure'>Course-Structure</a></li><li><a href='indexc761.html?page=syllabus'>Syllabus</a></li></ul></li><li><a href='http://iic.ac.in/vle'>VLE</a></li><li><a href='http://iic.ac.in/projects/2013'>Projects</a></li><li><a href='http://mail.iic.ac.in/'>Mail</a></li><li><a href='data/index.html'>Ubuntu Training</a></li><li><a href='http://iic.ac.in/placement'>Placement</a></li><li class='parent'><a href='indexcfeb.html?page=research-programs'>Research Programs</a><ul><li><a href='indexda49.html?page=ph-d-program'>Ph.D. Program</a></li><li><a href='index883a.html?page=entrance-syllabus'>Entrance Syllabus</a></li></ul></li></ul>
+            </nav>
+        </section> 
+    </footer>
+    <div class='clear'></div>
+</div>
+<!-- #wrapper //--> 
+
+</body>
+</html>

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<title>Alumni Connect</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-black.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="news_scroll.css" type="text/css">
+
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
+<body id="myPage">
+
+<!-- Side Navigation on click 
+<nav class="w3-sidenav w3-theme-l1 w3-card-2 w3-animate-left" style="display:none;z-index:2">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-xxlarge w3-text-teal">Close
+    <i class="fa fa-times-circle"></i>
+  </a>
+  <br>
+  <a href="javascript:void(0)" class="w3-xlarge">Envisage</a>
+  <a href="javascript:void(0)" class="w3-xlarge">Remenisence</a>
+  <a href="javascript:void(0)" class="w3-xlarge">Workshops</a>
+  <a href="javascript:void(0)" class="w3-xlarge">Forthcoming events</a>
+  <a href="javascript:void(0)" class="w3-xlarge">Placements</a>
+</nav>
+-->
+
+<!-- Navbar -->
+ <!-- <div class="w3-top"> -->
+ <ul class="w3-navbar w3-theme-d2 w3-left-align w3-large">
+  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+    <a class="w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="#" class="w3-hover-black"><img src="IIC_Logo_New2.jpg" alt="Lights" style="width:60%;height:60%;"></a></li>
+  <h2 style="color:cyan">Institute of Informatics and Communication </h2>
+  <h3 style="color:cyan">University of Delhi, South Campus </h3>
+  
+  
+  
+  <!-- SEARCH -->
+  <div class="w3-right">
+   <form id="searchbox " action="">
+    <input id="search" type="text" placeholder="Type here">
+    <input id="submit" type="submit" value="Search">
+</form>
+  </div>
+  	
+<!-- <li class="w3-hide-small w3-right"><a href="#" class="w3-hover-teal" title="Search"><i class="fa fa-search"></i></a></li> -->
+
+
+  
+ </ul>
+</div>
+
+<div>
+<ul class="w3-navbar w3-dark-grey w3-left-align w3-large">
+  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+    <a class="w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li class="w3-hide-small"><A HREF="home.html">Home</A></li>
+  <li class="w3-dropdown-hover w3-hover-teal">
+    <a href="#">Admissions <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-hover-grey w3-card-4">
+       <A HREF="eligibility.html">Eligibility</A>
+      <a href="#">Entrance Syllabus</a>
+    </div>
+  </li>
+  
+  <li class="w3-dropdown-hover w3-hover-teal">
+    <a href="#">Acedemics <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-hover-grey w3-card-4">
+      <A HREF="syllabus.html">Course Structure</A>
+      <a href="#">Results</a>
+    </div>
+  </li>
+  <li class="w3-hide-small"><A HREF="amenities.html">Amenities</A></li>
+ 
+  <li class="w3-hide-small"><a href="#" class="w3-hover-teal">VLE</a></li>
+  <li class="w3-hide-small"><a href="#" class="w3-hover-teal">Projects</a></li>
+  <li class="w3-hide-small"><a href="#" class="w3-hover-teal">Ubuntu Training</a></li>
+  <li class="w3-hide-small"><a href="#" class="w3-hover-teal">Placements</a></li>
+  <li class="w3-dropdown-hover w3-hover-teal">
+    <a href="#">Research <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-hover-grey w3-card-4">
+      <a href="#">Ph.D Programme</a>
+      <a href="phd.html">Entrance Syllabus</a>
+    </div>
+  </li>
+  <li class="w3-hide-small"><a href="#" class="w3-hover-teal">Alumni</a></li>
+</div>
+
+<!-- For Automatic Slideshow and Image Captions-->
+<div class="w3-content w3-display-container" style="max-width:100%;">
+  <img class="mySlides" src="IIC_1.jpg" style="width:100%; height:400px;">
+  <img class="mySlides" src="IIC_2.jpg" style="width:100%; height:400px;">
+  <img class="mySlides" src="IIC_3.jpg" style="width:100%; height:400px;">
+  <img class="mySlides" src="IIC_4.jpg" style="width:100%; height:400px;">
+  <div class="w3-center w3-section w3-large w3-text-white w3-display-bottomleft" style="width:100%">
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+  </div>
+</div>
+
+
+<!-- Row -->
+<div class="w3-row-padding w3-padding-10 w3-theme-l1">
+
+<div class="w3-half">
+<div class="w3-container w3-section w3-border w3-round-xlarge w3-scroll">
+<h2>About IIC </h2>
+<p align="justify">Established in 1997 , IIC has today evolved into one of the premier institutions of the country. The institute, in its nurturing environment gives birth to and nourishes the minds that go on to innovate in the field of communication and information technology.</p>
+
+<p align="justify">Providing a holistic approach, students are free to explore and further enhance the fields of networking, telecommunication and software with in-depth knowledge about data processing, programming languages and system analysis.</p>
+
+<p align="justify"> A mutual relationship is fostered between the faculty and students that allows the institute to move away from the conventional and includes not only classroom lectures but also tutorials, projects , assignments , seminars , presentations and ICT based learning. Masters of Science ( Informatics) in DU is the space where networking , telecommunication and software collate to enable its students to cater to the growing demands of the industry and to emerge as IIC-ians with a brand mark of their own.</p>
+</div>
+</div>
+
+<div class="w3-half">
+
+<div class="w3-container w3-section w3-border w3-round-xlarge w3-scroll">
+
+<!--h2>News and Updates </h2-->
+
+<!--div class="w3-container w3-section w3-border w3-round-xlarge w3-scroll"-->
+<!-- div class="w3-card w3-border w3-padding-10 w3-round-xlarge">
+  
+<!-- START SCROLLING NEWS WINDOW -->
+<div id="news_iframe_scroll" class="w3-scroll">
+<div class="news_scroll-title">
+<h2>News and Updates</h2><br>
+</div>
+<iframe name="NewsIFrame" src="news_scroll.html" height="100%" width="600px" frameborder="0" scrolling="no"></iframe>
+</div>
+<!-- END SCROLLING NEWS WINDOW -->
+</div>
+</div>
+</div>
+
+<!--
+<h2>Notifications </h2>
+<p><a href="#" target="_blank" style="color: rgb(64,224,208)">M.Sc. Informatics IInd Semester Results </a></p>
+<p><a href="#" target="_blank" style="color: rgb(64,224,208)">M.Sc. Informatics IVth Semester Results </a></p>
+<p><a href="#" target="_blank" style="color: rgb(64,224,208)">M.Sc. Informatics Entrance Results </a></p>
+<p><a href="#" target="_blank" style="color: rgb(64,224,208)">Ph.D. Entrance Results </a></p>
+-->
+
+</div>
+</div>
+</div>
+
+<!-- Container 
+ 
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-btn-floating-large w3-teal" style="position:absolute;top:-28px;right:24px;z-index:0;">
+  <i class="fa fa-plus"></i></a>
+</div>
+-->
+
+<!-- Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+      <p>Swing by for a cup of coffee, or whatever.</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;University of Delhi South Campus<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;South Moti Bagh<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New Delhi - 110021</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;011 2411 0237</p>
+      <p><i class="fa fa-envelope w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;contact@iic.ac.in</p>
+	  <p><i class="fa fa-globe w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;www.iic.ac.in</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white">
+      <div class="w3-group">      
+        <label class="w3-label">Name</label>
+        <input class="w3-input" type="text">
+      </div>
+      <div class="w3-group">      
+        <label class="w3-label">Email</label>
+        <input class="w3-input" type="text">
+      </div>
+      <div class="w3-group">      
+        <label class="w3-label">Subject</label>
+        <input class="w3-input" type="text">
+      </div>  
+      <input class="w3-check" type="checkbox" checked>
+      <label class="w3-validate">I Like it!</label>
+      <button type="button" class="w3-btn w3-right w3-theme">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Google Maps -->
+<div id="googleMap" style="width:100%;height:420px;"></div>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(28.584090, 77.163325);
+
+function initialize() {
+var mapProp = {
+  center:myCenter,
+  zoom:5,
+  scrollwheel:false,
+  draggable:false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position:myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-btn-floating w3-teal" href="https://www.facebook.com/iicudscofficial" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-btn-floating w3-teal" href="https://twitter.com/iicudscofficial" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-btn-floating w3-teal" href="http://www.youtube.com/user/IICUDSCOFFICIAL" title="Youtube"><i class="fa fa-youtube"></i></a>
+  <a class="w3-btn-floating w3-teal w3-hide-small" href="http://www.linkedin.com/groups?gid=1139537" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <br>
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-btn w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+
+</body>
+</html>
+
+</textarea>
+          <form autocomplete="off" style="margin:0px;display:none;">
+            <input type="hidden" name="code" id="code" />
+            <input type="hidden" id="bt" name="bt" />
+          </form>
+       </div>
+    </div>
+  </div>
+  <div id="iframecontainer">
+    <div id="iframe">
+      <div id="iframewrapper"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+submitTryit()
+function submitTryit() {
+  var text = document.getElementById("textareaCode").value;
+  var ifr = document.createElement("iframe");
+  ifr.setAttribute("frameborder", "0");
+  ifr.setAttribute("id", "iframeResult");  
+  document.getElementById("iframewrapper").innerHTML = "";
+  document.getElementById("iframewrapper").appendChild(ifr);
+  var ifrw = (ifr.contentWindow) ? ifr.contentWindow : (ifr.contentDocument.document) ? ifr.contentDocument.document : ifr.contentDocument;
+  ifrw.document.open();
+  ifrw.document.write(text);  
+  ifrw.document.close();
+  //23.02.2016: contentEditable is set to true, to fix text-selection (bug) in firefox.
+  //(and back to false to prevent the content from being editable)
+  //(To reproduce the error: Select text in the result window with, and without, the contentEditable statements below.)  
+  if (ifrw.document.body && !ifrw.document.body.isContentEditable) {
+    ifrw.document.body.contentEditable = true;
+    ifrw.document.body.contentEditable = false;
+  }
+}
+if ((window.screen.availWidth <= 768 && window.innerHeight > window.innerWidth) || " horizontal" == " horizontal") {restack(true);}
+function restack(horizontal) {
+    var tc, ic, t, i, c, f, sv, sh, d, height, flt, width;
+    tc = document.getElementById("textareacontainer");
+    ic = document.getElementById("iframecontainer");
+    t = document.getElementById("textarea");
+    i = document.getElementById("iframe");
+    c = document.getElementById("container");    
+    sv = document.getElementById("stackV");
+    sh = document.getElementById("stackH");
+    tc.className = tc.className.replace("horizontal", "");
+    ic.className = ic.className.replace("horizontal", "");        
+    t.className = t.className.replace("horizontal", "");        
+    i.className = i.className.replace("horizontal", "");        
+    c.className = c.className.replace("horizontal", "");                        
+    sv.className = sv.className.replace("horizontal", "");
+    sh.className = sh.className.replace("horizontal", "");
+    stack = "";
+    if (horizontal) {
+        tc.className = tc.className + " horizontal";
+        ic.className = ic.className + " horizontal";        
+        t.className = t.className + " horizontal";        
+        i.className = i.className + " horizontal";                
+        c.className = c.className + " horizontal";                
+        sv.className = sv.className + " horizontal";                        
+        sh.className = sh.className + " horizontal";
+        stack = " horizontal";
+        document.getElementById("textareacontainer").style.height = "50%";
+        document.getElementById("iframecontainer").style.height = "50%";
+        document.getElementById("textareacontainer").style.width = "100%";
+        document.getElementById("iframecontainer").style.width = "100%";
+    } else {
+        document.getElementById("textareacontainer").style.height = "100%";
+        document.getElementById("iframecontainer").style.height = "100%";
+        document.getElementById("textareacontainer").style.width = "50%";
+        document.getElementById("iframecontainer").style.width = "50%";
+    }
+    fixDragBtn();
+}
+if (navigator.userAgent.indexOf("WebKit") > -1 && navigator.userAgent.indexOf("Edge") == -1) {
+    document.getElementById("codecolor").className += " codecolorCC";
+    document.getElementById("textareaCode").className += " textareaCC";
+    removetabs();
+    colorcoding();
+    if (document.getElementById("textareaCode").addEventListener) {              
+        document.getElementById("textareaCode").addEventListener("input", removetabs);
+        document.getElementById("textareaCode").addEventListener("input", colorcoding);
+        document.getElementById("textareaCode").addEventListener("scroll", syncscroll);
+    } else if (document.getElementById("textareaCode").attachEvent) {                 
+        document.getElementById("textareaCode").attachEvent("oninput", removetabs);
+        document.getElementById("textareaCode").attachEvent("oninput", colorcoding);
+        document.getElementById("textareaCode").attachEvent("onscroll", syncscroll);
+    }
+}
+function removetabs() {
+    var text = document.getElementById("textareaCode").value;
+    text = text.replace(/\t/g, " ");
+    document.getElementById("textareaCode").value = text;
+}
+function colorcoding() {
+    var text = document.getElementById("textareaCode").value;
+    text = text.replace(/&/g, "&amp;");
+    text = text.replace(/\t/g, "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");   
+    text = text.replace(/  /g, " &nbsp;");  
+    text = text.replace(/</g, "&lt;");
+    text = text.replace(/>/g, "&gt;");
+    text = text.replace(/(?:\r\n|\r|\n)/g, '<br>');
+    text = text.replace(/<br> /g, "<br>&nbsp;");  
+    text = w3CodeColorize(text);
+    document.getElementById("codecolor").innerHTML = text + "<br>";
+}
+function syncscroll() {
+    document.getElementById("codecolor").scrollTop = document.getElementById("textareaCode").scrollTop;
+}
+var framesizetimeout;
+function showFrameSize() {
+  if (navigator.userAgent.indexOf("Edge") > -1) {return;}
+  if (stack == " horizontal") {
+    document.getElementById("framesize").style.top = "auto";
+    document.getElementById("framesize").style.bottom = "11px";
+  } else {
+    document.getElementById("framesize").style.top = "140px";
+    document.getElementById("framesize").style.bottom = "auto";
+  }
+  var width, height;
+  if (framesizetimeout) {window.clearTimeout(framesizetimeout);}
+  width = Number(w3_getStyleValue(document.getElementById("iframeResult"), "width").replace("px", "")).toFixed();
+  height = Number(w3_getStyleValue(document.getElementById("iframeResult"), "height").replace("px", "")).toFixed();
+  document.getElementById("framesize").style.display = "block";
+  document.getElementById("framesize").innerHTML = width + "px x " + height + "px";
+  framesizetimeout = window.setTimeout(function () {document.getElementById("framesize").style.display = "none";}, 1000);
+}
+var dragging = false;
+var stack;
+function fixDragBtn() {
+  var textareawidth, leftpadding, dragleft, containertop, buttonwidth
+  var containertop = Number(w3_getStyleValue(document.getElementById("container"), "top").replace("px", ""));
+  if (stack != " horizontal") {
+    document.getElementById("dragbar").style.width = "5px";    
+    textareasize = Number(w3_getStyleValue(document.getElementById("textareaCode"), "width").replace("px", ""));
+    leftpadding = Number(w3_getStyleValue(document.getElementById("textarea"), "padding-left").replace("px", ""));
+    buttonwidth = Number(w3_getStyleValue(document.getElementById("dragbar"), "width").replace("px", ""));
+    textareaheight = w3_getStyleValue(document.getElementById("textareaCode"), "height");
+    dragleft = textareasize + leftpadding + (leftpadding / 2) - (buttonwidth / 2);
+    document.getElementById("dragbar").style.top = containertop + "px";
+    document.getElementById("dragbar").style.left = dragleft + "px";
+    document.getElementById("dragbar").style.height = textareaheight;
+    document.getElementById("dragbar").style.cursor = "col-resize";
+    
+  } else {
+    document.getElementById("dragbar").style.height = "5px";
+    if (window.getComputedStyle) {
+        textareawidth = window.getComputedStyle(document.getElementById("textareaCode"),null).getPropertyValue("height");
+        textareaheight = window.getComputedStyle(document.getElementById("textareaCode"),null).getPropertyValue("width");
+        leftpadding = window.getComputedStyle(document.getElementById("textarea"),null).getPropertyValue("padding-top");
+        buttonwidth = window.getComputedStyle(document.getElementById("dragbar"),null).getPropertyValue("height");
+    } else {
+        dragleft = document.getElementById("textareaCode").currentStyle["width"];
+    }
+    textareawidth = Number(textareawidth.replace("px", ""));
+    leftpadding = Number(leftpadding .replace("px", ""));
+    buttonwidth = Number(buttonwidth .replace("px", ""));
+    dragleft = containertop + textareawidth + leftpadding + (leftpadding / 2);
+    document.getElementById("dragbar").style.top = dragleft + "px";
+    document.getElementById("dragbar").style.left = "5px";
+    document.getElementById("dragbar").style.width = textareaheight;
+    document.getElementById("dragbar").style.cursor = "row-resize";        
+  }
+}
+function dragstart(e) {
+  e.preventDefault();
+  dragging = true;
+  var main = document.getElementById("iframecontainer");
+}
+function dragmove(e) {
+  if (dragging) 
+  {
+    document.getElementById("shield").style.display = "block";        
+    if (stack != " horizontal") {
+      var percentage = (e.pageX / window.innerWidth) * 100;
+      if (percentage > 5 && percentage < 98) {
+        var mainPercentage = 100-percentage;
+        document.getElementById("textareacontainer").style.width = percentage + "%";
+        document.getElementById("iframecontainer").style.width = mainPercentage + "%";
+        fixDragBtn();
+      }
+    } else {
+      var containertop = Number(w3_getStyleValue(document.getElementById("container"), "top").replace("px", ""));
+      var percentage = ((e.pageY - containertop + 20) / (window.innerHeight - containertop + 20)) * 100;
+      if (percentage > 5 && percentage < 98) {
+        var mainPercentage = 100-percentage;
+        document.getElementById("textareacontainer").style.height = percentage + "%";
+        document.getElementById("iframecontainer").style.height = mainPercentage + "%";
+        fixDragBtn();
+      }
+    }
+    showFrameSize();    
+  }
+}
+function dragend() {
+  document.getElementById("shield").style.display = "none";
+  dragging = false;
+}
+if (window.addEventListener) {              
+  document.getElementById("dragbar").addEventListener("mousedown", function(e) {dragstart(e);});
+  document.getElementById("dragbar").addEventListener("touchstart", function(e) {dragstart(e);});
+  window.addEventListener("mousemove", function(e) {dragmove(e);});
+  window.addEventListener("touchmove", function(e) {dragmove(e);});
+  window.addEventListener("mouseup", dragend);
+  window.addEventListener("touchend", dragend);
+  window.addEventListener("load", fixDragBtn);
+}
+function w3_getStyleValue(elmnt,style) {
+    if (window.getComputedStyle) {
+        return window.getComputedStyle(elmnt,null).getPropertyValue(style);
+    } else {
+        return elmnt.currentStyle[style];
+    }
+} */
+</script> 
+
+<script>
+/*Animated Slideshow*/
+
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+
+var slideIndex = 1;
+showDivs(slideIndex);
+function currentDiv(n) {
+showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+</body>
+</html>
